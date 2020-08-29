@@ -22,12 +22,13 @@ function App() {
     setUserName(name);
     setHideData(true);
   };
+  const defaultUsers = ["Juan Arbildo", "Markus Boston"];
   useEffect(() => {
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 2; i++) {
       const { data, points } = generateExpences();
       let item = {
         id: uuid(),
-        name: "User " + (i + 1),
+        name: defaultUsers[i],
         dayExp: data,
         points: points,
       };
