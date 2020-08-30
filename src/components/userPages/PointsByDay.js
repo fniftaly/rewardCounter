@@ -11,7 +11,7 @@ const PointsByDay = ({ items, name, setHideData }) => {
           return (
             <li key={item.day} style={styles.itemli}>
               <span style={styles.spanli}>
-                Transition:{"   "}${item.spend}
+                Transaction:{"   "}${item.spend}
               </span>
               <span>
                 Points:{"   "}
